@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUSTRESO - Roblox Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cosmic-loader" id="loader">
+        <div class="galaxy-spinner">
+            <div class="orbit orbit1"><div class="planet"></div></div>
+            <div class="orbit orbit2"><div class="planet"></div></div>
+            <div class="orbit orbit3"><div class="planet"></div></div>
+            <div class="center-star"></div>
+        </div>
+        <div class="loader-text">
+            <span class="loader-title">LOADING</span>
+            <div class="loading-progress-container">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="cosmos-bg"></canvas>
+    <canvas id="stars-bg"></canvas>
+    <div class="nebula-container">
+        <div class="nebula nebula1"></div>
+        <div class="nebula nebula2"></div>
+        <div class="nebula nebula3"></div>
+    </div>
+    
+    <nav class="cosmic-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="https://res.cloudinary.com/dcyvxzhnl/image/upload/v1749356443/image_2025-06-08_002046602_opxuqa.png" alt="QUSTRESO" class="logo-img">
+                <span class="logo-text">QUSTRESO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">
+                    <span class="nav-text">HOME</span>
+                    <span class="nav-glow"></span>
+                </a></li>
+                <li><a href="work.html" class="nav-link">
+                    <span class="nav-text">WORK</span>
+                    <span class="nav-glow"></span>
+                </a></li>
+                <li><a href="clients.html" class="nav-link">
+                    <span class="nav-text">CLIENTS</span>
+                    <span class="nav-glow"></span>
+                </a></li>
+                <li><a href="policy.html" class="nav-link">
+                    <span class="nav-text">POLICY</span>
+                    <span class="nav-glow"></span>
+                </a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-cosmos">
+        <div class="cosmic-dust"></div>
+        <div class="hero-content">
+            <div class="hero-main">
+                <div class="hero-logo">
+                    <img src="https://res.cloudinary.com/dcyvxzhnl/image/upload/v1749356443/image_2025-06-08_002046602_opxuqa.png" alt="QUSTRESO">
+                    <div class="logo-glow"></div>
+                </div>
+                <h1 class="hero-title">QUSTRESO</h1>
+                <p class="hero-subtitle">Roblox Developer</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">3.1M</span>
+                        <span class="stat-label">PLAYERS CONTRIBUTED</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">PROJECTS</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">$5K+</span>
+                        <span class="stat-label">REVENUE</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="work.html" class="cosmic-btn primary">
+                        <span class="btn-text">VIEW MY WORK</span>
+                    </a>
+                    <a href="#contact" class="cosmic-btn secondary">
+                        <span class="btn-text">GET IN TOUCH</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-code">
+                <div class="holographic-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-title">game.lua</div>
+                        <div class="terminal-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-universe">
+                            <pre><code id="cosmic-code"></code></pre>
+                            <div class="code-cursor"></div>
+                        </div>
+                        <div class="terminal-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Hi, I'm Qustreso, a Roblox developer based in Australia. I specialize in full-stack scripting with 2+ years of experience in game development. 
+                    I work well with frameworks and OOP modularized code to create efficient and scalable systems.
+                </p>
+                <div class="client-highlight">
+                    <p>I have worked with YouTubers such as <strong>KristianPH</strong> and <strong>TomaTime</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="capabilities">
+        <div class="section-header">
+            <h2 class="section-title">Core Capabilities</h2>
+            <p class="section-subtitle">Expert-level skills in Roblox development</p>
+        </div>
+        
+        <div class="container">
+            <div class="capability-grid">
+                <div class="capability-card" data-skill="scripting">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>SCRIPTING</h3>
+                        <p>Advanced Lua programming with clean, optimized code architecture</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="vfx">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>VFX</h3>
+                        <p>Stunning visual effects that enhance gameplay experience</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="animation">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>ANIMATION</h3>
+                        <p>Smooth character animations and dynamic movement systems</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="mmo">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>MMO SYSTEMS</h3>
+                        <p>Large-scale multiplayer systems with seamless networking</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="combat">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <h3>COMBAT SYSTEMS</h3>
+                        <p>Responsive combat mechanics with perfect hit detection</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="ui">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>UI/UX SYSTEMS</h3>
+                        <p>Modern interfaces with intuitive user experiences</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="data">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>DATA STORES</h3>
+                        <p>Secure data persistence with automatic backup systems</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 96%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="systems">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>COMPLEX SYSTEMS</h3>
+                        <p>Advanced game mechanics and system architecture</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 94%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="abilities">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>ABILITIES</h3>
+                        <p>Dynamic ability systems with balanced gameplay</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 97%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="stats">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>STAT SYSTEMS</h3>
+                        <p>Comprehensive progression and leveling systems</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 93%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-skill="rng">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-dice-d20"></i>
+                        </div>
+                        <h3>RNG SYSTEMS</h3>
+                        <p>Fair randomization with pity and reward mechanics</p>
+                        <div class="power-level">
+                            <div class="power-bar" style="--power: 91%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cosmos" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Ready to Start Your Project?</h2>
+            <p class="section-subtitle">Let's build something amazing together</p>
+        </div>
+        
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-grid">
+                    <a href="https://x.com/QUSTRESO" target="_blank" class="contact-link">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                        <span>X (Twitter)</span>
+                    </a>
+                    <a href="https://roblox.com/users/5791147432/profile" target="_blank" class="contact-link">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M5.164 0L.16 18.928L18.836 24L23.84 5.072Zm3.3 7.018l5.378 1.463l-1.478 5.453l-5.378-1.462Z"/>
+                            </svg>
+                        </div>
+                        <span>Roblox</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-wV5R1KfZiXgxBGLpQMiyQ" target="_blank" class="contact-link">
+                        <div class="link-icon"><i class="fab fa-youtube"></i></div>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="https://discordapp.com/users/1146923509856096397" target="_blank" class="contact-link">
+                        <div class="link-icon"><i class="fab fa-discord"></i></div>
+                        <span>Discord</span>
+                    </a>
+                </div>
+                
+                <a href="https://discordapp.com/users/1146923509856096397" target="_blank" class="cosmic-btn primary large">
+                    <span class="btn-text">LAUNCH PROJECT</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cosmic-footer">
+        <div class="footer-stars"></div>
+        <div class="container">
+            <p>&copy; 2025 QUSTRESO</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
